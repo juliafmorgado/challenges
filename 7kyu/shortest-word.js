@@ -9,3 +9,8 @@ function findShort(s){
 function findShort(s){
     return Math.min.apply(null, s.split(' ').map(w => w.length));
   }
+
+//Another solution
+function findShort(s){
+    return Math.min(...s.split(" ").map (s => s.length));
+}
