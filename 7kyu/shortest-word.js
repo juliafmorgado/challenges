@@ -14,3 +14,10 @@ function findShort(s){
 function findShort(s){
     return Math.min(...s.split(" ").map (s => s.length));
 }
+
+//Another solution
+const findShort = (s) => s
+  .split(' ')
+  .sort((a, b) => b.length - a.length)
+  .pop()
+  .length;
