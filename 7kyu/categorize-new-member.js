@@ -16,7 +16,7 @@
 // Destructuring: [age, handicap] https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 
 function openOrSenior(data){
-    return data.map(([age, handicap]) => (age > 54 && handicap > 7) ? 'Senior' : 'Open');
+    return data.map(([age, handicap]) => age > 54 && handicap > 7 ? 'Senior' : 'Open');
   }
 
   //OR
