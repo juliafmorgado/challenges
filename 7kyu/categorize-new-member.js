@@ -22,3 +22,11 @@ function openOrSenior(data){
   //OR
 
 openOrSenior =(data)=> data.map(v=>v[0] >= 55 && v[1] > 7 ? 'Senior' : 'Open')
+
+//Another solution
+function openOrSenior(data){
+    function determineMembership([age, handicap]) {
+      return age >= 55 && handicap > 7 ? 'Senior' : 'Open';
+    }
+    return data.map(determineMembership);
+  }
