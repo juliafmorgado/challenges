@@ -17,3 +17,24 @@
 // //                     "-"      " "    " "     " "     "!"
 // === "e6t-r3s are r4y fun!"
 
+
+//Solution
+function abbreviate(string) {
+    return string.replace(/\w{4,}/gi, (match) => `${match[0]}${match.length - 2}${match[match.length - 1]}`);
+  }
+
+//Another solution
+var find = /[a-z]{4,}/gi;
+function replace(match) { return match[0] + (match.length - 2) + match[match.length - 1]; }
+
+function abbreviate(string) {
+  return string.replace(find, replace);
+}
+
+
+//Another Solution
+function abbreviate(string) {
+    return string.replace(/\w{4,}/g, function(word) {
+      return word[0] + (word.length - 2) + word.slice(-1);
+    });
+  }
