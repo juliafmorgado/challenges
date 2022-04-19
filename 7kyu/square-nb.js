@@ -10,3 +10,8 @@
 // 25  =>  true
 // 26  =>  false
 
+//Solution
+function isSquare(n) {
+    return Math.sqrt(n) % 1 === 0;
+  }
+
