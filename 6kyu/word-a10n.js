@@ -38,3 +38,8 @@ function abbreviate(string) {
       return word[0] + (word.length - 2) + word.slice(-1);
     });
   }
+
+  //Another solution
+  function abbreviate(string) {
+    return string.replace(/\B\w{2,}\B/g, match=> match.length);
+  }
