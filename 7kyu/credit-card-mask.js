@@ -25,4 +25,7 @@ function maskify(cc) {
 //Another solution
 function maskify(cc){
     let arr = cc.split('')
+    for(var i = 0; i < cc.length - 4; i++){
+        cc[i] = "#";
+    }
 }
