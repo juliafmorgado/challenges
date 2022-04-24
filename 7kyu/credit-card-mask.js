@@ -23,3 +23,6 @@ function maskify(cc) {
   }
 
 //Another solution
+function maskify(cc){
+    
+}
