@@ -17,7 +17,7 @@ function maskify(cc) {
     for(var i = 0; i < cc.length - 4; i++){
       cc[i] = "#";
   }
-  
+
   cc = cc.join("");
   return cc
   }
