@@ -21,3 +21,5 @@ function maskify(cc) {
   cc = cc.join("");
   return cc
   }
+
+//Another solution
