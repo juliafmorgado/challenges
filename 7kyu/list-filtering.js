@@ -9,3 +9,8 @@
 function filter_list(l) {
     return l.filter(Number.isFinite);
   }
+
+//Another similar solution
+function filter_list(l) {
+    return l.filter(Number.isInteger);
+  }
