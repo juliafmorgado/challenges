@@ -14,3 +14,16 @@ function filter_list(l) {
 function filter_list(l) {
     return l.filter(Number.isInteger);
   }
+
+  function filter_list(l) {
+    return l.filter(v => typeof v == "number")
+   }
+
+  function filter_list(l) {
+    return l.filter(x => typeof(x) =="number");
+  }
+
+
+  function filter_list(l) {
+    return l.filter(i=> typeof i !== 'string');
+  }
