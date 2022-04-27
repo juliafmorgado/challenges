@@ -2,8 +2,8 @@
 
 // Examples:
 // Input: 42145 Output: 54421
-
 // Input: 123456789 Output: 987654321
+// Input
 
 //My solution
 function descendingOrder(n){
