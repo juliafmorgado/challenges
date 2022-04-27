@@ -22,3 +22,8 @@ function DNAStrand(dna){
     })
     .join('')
   }
+
+  //Another solution
+  function DNAStrand(dna) {
+    return dna.split('').map(function(v) {return {A:'T', T:'A', C:'G', G:'C'}[v];}).join('');
+  }
