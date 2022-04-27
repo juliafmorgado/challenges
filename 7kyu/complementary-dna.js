@@ -4,3 +4,21 @@
 // "ATTGC" --> "TAACG"
 // "GTAT" --> "CATA"
 
+//My solution
+function DNAStrand(dna){
+    return dna
+    .split('')
+    .map((elem) => {
+      if (elem == 'A'){
+        return 'T'
+      }else if (elem == 'T'){
+        return 'A'
+      }else if (elem == 'C'){
+        return 'G'
+      }
+      else if (elem == 'G'){
+        return 'C'
+      }
+    })
+    .join('')
+  }
