@@ -9,3 +9,9 @@ function sumTwoSmallestNumbers(numbers) {
     .slice(0, 2)
     .reduce((acc, c) => acc + c, 0)
   }
+
+  //Simpler solution
+  function sumTwoSmallestNumbers(numbers) {  
+    var [ a, b ] = numbers.sort((a, b) => a - b)
+    return a + b
+  }
