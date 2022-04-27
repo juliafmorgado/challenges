@@ -6,8 +6,8 @@
 // filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
 
 //My solution
-function filter_list(l) {
-    return l.filter(Number.isFinite);
+function filter_list(list) {
+    return list.filter(Number.isFinite);
   }
 
 //Another similar solution
