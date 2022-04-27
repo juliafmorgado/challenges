@@ -8,7 +8,7 @@
 //  3  =>  false
 //  4  =>  true
 // 25  =>  true
-// 26  =>  false
+// 27  =>  false
 
 //Solution
 function isSquare(n) {
