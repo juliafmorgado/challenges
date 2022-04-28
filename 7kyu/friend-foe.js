@@ -4,3 +4,7 @@
 
 // Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
 
+//My solution
+function friend(friends){
+    return friends.filter(word => word.length == 4)
+     }
