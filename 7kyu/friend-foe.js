@@ -6,5 +6,8 @@
 
 //My solution
 function friend(friends){
-    return friends.filter(word => word.length == 4)
+    return friends.filter(word => word.length === 4)
      }
+
+//Solution with arrow function
+let friend = friends => friends.filter(word => word.length === 4)
