@@ -23,7 +23,7 @@ function abbreviate(string) {
     return string.replace(/\w{4,}/gi, (match) => `${match[0]}${match.length - 2}${match[match.length - 1]}`);
   }
 
-//Another solution
+//Another solution using regex
 var find = /[a-z]{4,}/gi;
 function replace(match) { return match[0] + (match.length - 2) + match[match.length - 1]; }
 
