@@ -12,19 +12,18 @@
 //My solution
 function findOdd(A) {
     //runs two nested loops
+    // outer loop picks all elements one by one
     for(let i = 0; i < A.length; i++) {
       let count = 0;
-      
+    //inner loop counts the number of occurrences of the element picked by the outer loop  
       for (let j = 0; j < A.length; j++) {
         if(A[i] == A[j]) {
           count++;
         }
       }
-      
       if (count % 2 != 0) {
         return A[i];
       }
     }
-    
     return -1;
   }
