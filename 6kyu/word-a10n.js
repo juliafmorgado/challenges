@@ -18,7 +18,7 @@
 // === "e6t-r3s are r4y fun!"
 
 
-//Solution
+//Solution using regex
 function abbreviate(string) {
     return string.replace(/\w{4,}/gi, (match) => `${match[0]}${match.length - 2}${match[match.length - 1]}`);
   }
@@ -32,7 +32,7 @@ function abbreviate(string) {
 }
 
 
-//Another Solution
+//Another Solution using regex
 function abbreviate(string) {
     return string.replace(/\w{4,}/g, function(word) {
       return word[0] + (word.length - 2) + word.slice(-1);
