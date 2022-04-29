@@ -30,3 +30,17 @@ function findOdd(A) {
 
 //Other solution using Bitwise XOR operator
 const findOdd = (xs) => xs.reduce((a, b) => a ^ b);
+
+
+//Another solution
+function findOdd(A) {
+  for(var i = 0; i < A.length; i++){  
+    //Query the number of times that this 'i' element appears
+    //then verify if that number of times is odd. If it is true, then return
+    //that 'i' element
+    if((A.filter(function(item){return item == A[i]; })).length % 2 != 0){
+      return A[i];
+    }
+  }
+  return 0;
+}
