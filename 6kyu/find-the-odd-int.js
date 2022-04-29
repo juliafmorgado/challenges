@@ -28,3 +28,5 @@ function findOdd(A) {
     return -1;
   }
 
+//Other solution using Bitwise XOR operator
+const findOdd = (xs) => xs.reduce((a, b) => a ^ b);
