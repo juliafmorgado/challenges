@@ -12,10 +12,6 @@
 // //                123456     123     1     1234     1
 // // ignore short words:               X              X
 
-// // abbreviate:    "e6t"     "r3s"  "are"  "r4y"   "fun"
-// // all non-word characters (*) remain in place
-// //                     "-"      " "    " "     " "     "!"
-// === "e6t-r3s are r4y fun!"
 
 
 //Solution using regex
