@@ -39,7 +39,7 @@ function abbreviate(string) {
     });
   }
 
-  //Another solution
+  //Another solution using regex
   function abbreviate(string) {
     return string.replace(/\B\w{2,}\B/g, match=> match.length);
   }
