@@ -11,3 +11,9 @@
 function arrayDiff(a,b){
     return a.filter((item) => !b.includes(item))
   }
+
+//Another solution
+function array_diff(a, b) {
+    b = new Set(b)
+    return a.filter(v => !b.has(v))
+  }
