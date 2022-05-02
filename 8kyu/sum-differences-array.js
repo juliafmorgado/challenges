@@ -26,4 +26,6 @@ function sumOfDifferences(arr) {
     return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0;
 }
 
-//
+//Another solution
+const sumOfDifferences = arr =>
+  arr.sort((a, b) => b - a).shift() - arr.pop() || 0;
