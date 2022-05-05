@@ -4,3 +4,10 @@
 
 // solution('abc', 'bc') // returns true
 // solution('abc', 'd') // returns false
+
+//My solution
+// function solution(str, ending){
+//   return str.endsWith(ending) ? true : false
+// }
+
+let solution = (str, ending) => str.endsWith(ending) ? true : false
