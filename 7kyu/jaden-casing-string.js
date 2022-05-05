@@ -18,3 +18,8 @@ String.prototype.toJadenCase = function () {
   
     return newStr.substr(1);
   }
+
+  //What I had tried before but didn't work: try to fix it
+  // String.prototype.toJadenCase = function () {
+//   return this.split(' ').map((word, ind) => word[0].toUpperCase() + word.slice(1) + ' ').join('')
+// };
