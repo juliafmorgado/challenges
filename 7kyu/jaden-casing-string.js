@@ -24,9 +24,16 @@ String.prototype.toJadenCase = function () {
 //   return this.split(' ').map((word, ind) => word[0].toUpperCase() + word.slice(1) + ' ').join('')
 // };
 
+//Check this one
+String.prototype.toJadenCase = function() {
+    return this.split(' ').map(item => item[0].toUpperCase() + item.slice(1)).join(' ')
+  };
+
 //Another solution
 String.prototype.toJadenCase = function () { 
     return this.split(" ").map(function(word){
       return word.charAt(0).toUpperCase() + word.slice(1);
     }).join(" ");
   }
+
+//Solution with regex
