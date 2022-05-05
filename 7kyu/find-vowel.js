@@ -10,3 +10,17 @@
 
 // Vowels in this context refers to: a e i o u y (including upper case)
 // This is indexed from [1..n] (not zero indexed!)
+
+//My solution
+function vowelIndices(word){
+  
+    const vow = ['a', 'e', 'i', 'o', 'u', 'y'];
+    const result = [];
+    [...word.toLowerCase()].forEach((char, index) => {
+      if (vow.includes(char)) {
+        result.push(index+1);
+      }
+    })
+  
+    return result
+  }
