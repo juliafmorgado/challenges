@@ -13,4 +13,12 @@
 
 // Shorter words will have an empty string in the place once the word has already been mapped out (see the last element in the last element in the array).
 
-//
+//Solution
+
+
+//Another Solution
+const arrAdder = (arr) => {
+    return arr[0]
+      .map((el, i) => arr.map((el, j) => arr[j][i]).join(""))
+      .join(" ");
+  };
