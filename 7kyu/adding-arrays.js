@@ -14,7 +14,16 @@
 // Shorter words will have an empty string in the place once the word has already been mapped out (see the last element in the last element in the array).
 
 //Solution
-
+function arrAdder(arr) {
+    var res = '';
+    for (var i = 0; i < arr[0].length; i++) {
+      for (var j = 0; j < arr.length; j++) {
+        res += arr[j][i];
+      }
+      res += ' ';
+    }
+    return res.trim();
+  }
 
 //Another Solution
 const arrAdder = (arr) => {
