@@ -4,3 +4,9 @@
 // "This is an example!" ==> "sihT si na !elpmaxe"
 // "double  spaces"      ==> "elbuod  secaps"
 
+
+
+//My solution
+function reverseWords(str) {
+    return str.split("").reverse().join("").split(" ").reverse().join(" ");
+  }
