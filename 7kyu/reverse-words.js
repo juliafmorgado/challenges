@@ -10,3 +10,8 @@
 function reverseWords(str) {
     return str.split("").reverse().join("").split(" ").reverse().join(" ");
   }
+
+//Another solution
+function reverseWords(str) {
+    return str.split(' ').map( str => str.split('').reverse().join('') ).join(' ');
+  }
