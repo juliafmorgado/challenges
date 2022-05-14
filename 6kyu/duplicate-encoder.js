@@ -5,3 +5,15 @@
 // "recede"   =>  "()()()"
 // "Success"  =>  ")())())"
 // "(( @"     =>  "))((" 
+
+
+//My solution
+function duplicateEncode(word){
+    //make everything lower case
+    word = word.toLowerCase();  
+    //create a var to hold the new string
+    let unique = '';
+    for (let i=0; i<word.length; i++) {
+        ( word.indexOf(word[i]) !== word.lastIndexOf(word[i]) ) ? unique += ')' : unique += '(' }
+      return unique
+  }
