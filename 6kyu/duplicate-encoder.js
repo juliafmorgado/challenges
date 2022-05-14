@@ -28,3 +28,10 @@ function duplicateEncode(word){
       })
       .join('');
   }
+
+//Another solution
+const duplicateEncode = s => s
+  .toLowerCase()
+  .split``
+  .map((e, _, a) => a.indexOf(e) === a.lastIndexOf(e) ? '(' : ')')
+  .join``;
