@@ -17,3 +17,14 @@ function duplicateEncode(word){
         ( word.indexOf(word[i]) !== word.lastIndexOf(word[i]) ) ? unique += ')' : unique += '(' }
       return unique
   }
+
+//Another solution
+function duplicateEncode(word){
+    return word
+      .toLowerCase()
+      .split('')
+      .map( function (a, i, w) {
+        return w.indexOf(a) == w.lastIndexOf(a) ? '(' : ')'
+      })
+      .join('');
+  }
