@@ -18,3 +18,16 @@ function dup(s) {
 };
 
 // const dup = s => s.map(w => w.split('').filter((c, i, arr) => c !== arr[i - 1]).join(''));
+
+function dup(array) {
+return array.map(word => word.split('').filter( (letter, index) => letter !== word[index + 1]).join(''))
+};
+
+//Another solution
+function dup(arr) {
+  return arr.map(e => {
+    return e.split('').filter((j, i, arr) => {      
+      if(j !== arr[i+1]) return j
+    }).join('')    
+  })
+};
