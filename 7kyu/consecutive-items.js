@@ -2,3 +2,10 @@
 
 // It is guaranteed that a and b are both present in arr.
 
+//Solution
+
+
+//Another Solution
+function consecutive(arr, a, b) {
+  return Math.abs(arr.indexOf(a) - arr.indexOf(b)) == 1  ? true : false;
+}
