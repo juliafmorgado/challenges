@@ -3,7 +3,9 @@
 // It is guaranteed that a and b are both present in arr.
 
 //Solution
-
+function consecutive(arr, a, b) {
+  return Math.abs(arr.indexOf(a) - arr.indexOf(b)) == 1;
+}
 
 //Another Solution
 function consecutive(arr, a, b) {
