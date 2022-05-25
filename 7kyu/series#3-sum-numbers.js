@@ -10,3 +10,9 @@
 // (-1, 0) --> -1 (-1 + 0 = -1)
 // (-1, 2) --> 2 (-1 + 0 + 1 + 2 = 2)
 
+//Solution
+const GetSum = (a, b) => {
+  let min = Math.min(a, b),
+      max = Math.max(a, b);
+  return (max - min + 1) * (min + max) / 2;
+}
