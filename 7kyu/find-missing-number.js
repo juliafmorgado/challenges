@@ -10,3 +10,11 @@ function missingNo(nums) {
    }
 }
 }
+
+//New solution
+function missingNo(nums) {
+   let arr=nums.sort(function(a,b){return a-b});
+   for(let i=0;i<= arr.length;i++)
+       if(i!=arr[i])
+           return i;    
+}
