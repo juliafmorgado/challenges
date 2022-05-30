@@ -24,3 +24,7 @@ function ghostBusters(building) {
   return arr;
 }
 
+//Another solution
+function ghostBusters(building) {
+  return building.split(" ").join("")==building?"You just wanted my autograph didn't you?":building.split(" ").join("")
+}
