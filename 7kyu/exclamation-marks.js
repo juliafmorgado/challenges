@@ -30,3 +30,8 @@ function remove(string) {
     let newStr = newStrArr.join(" ")
     return newStr
 }
+
+//Another solution
+function remove(s){
+  return s.split(' ').filter(i => i.split('!').length != 2).join(' ');
+}
