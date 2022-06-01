@@ -3,3 +3,8 @@
 // If two words have the same last letter, they returned array should show them in the order they appeared in the given string.
 
 // All inputs will be valid.
+
+//Solution using .localeCompare()
+function last (words) {
+  return words.split(' ').sort((a, b) => a.slice(-1).localeCompare(b.slice(-1)))
+}
