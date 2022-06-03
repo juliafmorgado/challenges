@@ -15,3 +15,8 @@
 function incrementer(nums) { 
   return nums.map((n, i) => n+(i+1)).map(num => num<10 ? num : + String(num).slice(-1))
 }
+
+//Another solution
+function incrementer(num) { 
+  return num.map((a,i) => (a+i+1)%10);
+}
