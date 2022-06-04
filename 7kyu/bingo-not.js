@@ -8,3 +8,6 @@ function bingo(a) {
   let input = a.map(e => String.fromCharCode(e+96)).join('') 
   return [..."bingo"].every(e => input.includes(e)) ? "WIN" :"LOSE" 
 }
+
+//Heluix's solution
+const bingo = array => ([2, 7, 9, 14, 15].every(bingoValue => array.includes(bingoValue)) ? 'WIN' : 'LOSE')
