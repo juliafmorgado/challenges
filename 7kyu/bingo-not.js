@@ -2,3 +2,9 @@
 
 // Each number corresponds to their alphabetical order letter (e.g. 1 = A. 2 = B, etc). Write a function where you will win the game if your numbers can spell "BINGO". They do not need to be in the right order in the input array. 
 // Otherwise you will lose. Your outputs should be "WIN" or "LOSE" respectively.
+
+//Saira's solution
+function bingo(a) { 
+  let input = a.map(e => String.fromCharCode(e+96)).join('') 
+  return [..."bingo"].every(e => input.includes(e)) ? "WIN" :"LOSE" 
+}
