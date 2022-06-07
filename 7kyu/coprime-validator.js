@@ -15,3 +15,18 @@
 // Factors of 39: 1, 3, 13, 39
 // Greatest shared factor: 3
 // Result: 12 and 39 are not coprimes
+
+
+//My solution
+function isCoprime(x, y) {
+  let factorsX = [], factorsY = []
+  for (let i=1; i<=x; i++){
+    x%i==0 ? factorsX.push(i) : void(0)
+  }
+  for (let j=1; j<=y; j++){
+    y%j==0 ? factorsY.push(j) : void(0)
+  }
+let dup = factorsX.concat(factorsY).filter((el, index, array) => array.indexOf(el) != index)
+return dup == 1 ? true : false
+
+}
