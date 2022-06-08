@@ -3,3 +3,6 @@
 // Example(Input --> Output)
 
 // "john McClane" --> "McClane john"
+
+//Solution
+const nameShuffler = str => str.split(' ').reverse().join(' ');
