@@ -14,3 +14,14 @@ function getDivisorsCnt(n) {
   for(var i = 1; i <= n; i++) if(n % i == 0) div++;
   return div;
 }
+
+//Another solution
+function getDivisorsCnt(n){
+    let output = 0; 
+    for (let i=1; i<=n; i++) {
+      if (n % i == 0) {
+        output += 1; 
+}
+}
+  return output;
+}
