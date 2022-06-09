@@ -7,3 +7,10 @@
 // 5 --> 2 (1, 5)
 // 12 --> 6 (1, 2, 3, 4, 6, 12)
 // 30 --> 8 (1, 2, 3, 5, 6, 10, 15, 30)
+
+//Solution
+function getDivisorsCnt(n) {
+  var div = 0;
+  for(var i = 1; i <= n; i++) if(n % i == 0) div++;
+  return div;
+}
