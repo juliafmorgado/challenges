@@ -18,5 +18,6 @@ function array_diff(a, b) {
     return a.filter(v => !b.has(v))
   }
 
+
 //Another solution with lodash
 array_diff = require("lodash").difference;
