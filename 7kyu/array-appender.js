@@ -7,6 +7,7 @@
 // ['a','b','c'], [1,2,3]     --> ['a','b','c',1,2,3]
 // [['x','x'],'B'], ['c','D'] --> [['x','x'],'B','c','D']
 
+
 //Solution
 function combineArrays (arr1, arr2) {
     return (arr1||[]).concat(arr2||[]); 
