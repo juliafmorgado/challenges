@@ -13,3 +13,12 @@
 // The corresponding sums are (put together in a list): [20, 20, 19, 16, 10, 0]
 
 // The function parts_sums (or its variants in other languages) will take as parameter a list ls and return a list of the sums of its parts as defined above.
+
+//Solution
+function partsSums(ls) {
+  let result = [0]
+  for(const n in ls.reverse()){
+    result.push(ls[n]+result[n]);
+  }
+  return result.reverse()
+}
