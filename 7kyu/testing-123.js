@@ -14,3 +14,6 @@
 var number=function(array){
   return array.map((e,i) => (i+1)+": "+e);
 }
+
+//Another solution
+const number = array => array.map((n, i) => `${i + 1}: ${n}`);
