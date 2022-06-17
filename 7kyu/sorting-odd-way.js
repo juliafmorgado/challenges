@@ -6,3 +6,8 @@ let odd = array.filter(e => Math.floor(e)%2 != 0).sort((a,b) => a-b)
 let even = array.filter(e => Math.floor(e)%2 == 0).sort((a,b) =>b-a)
 return [...odd, ...even]
 }
+
+//Another solution
+// function sortItOut(array){
+//   return[...(array.filter(e => Math.floor(e)%2 != 0).sort((a,b) => a - b)), ...(array.filter(e => Math.floor(e)%2 == 0).sort((a,b) => b-a))]
+// }
