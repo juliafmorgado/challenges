@@ -8,3 +8,10 @@
 
 // odd numbers ascending:   [1, 3,       5   ]
 // even numbers descending: [      8, 4,    2]
+
+//Solution
+function sortArray(array) {
+    const odd = array.filter((x) => x % 2).sort((a,b) => a - b);
+    const even = array.filter((x) => ! (x % 2)).sort((a,b) => b - a);
+    return array.map((x) => x % 2 ? odd.shift() : even.shift());
+}
