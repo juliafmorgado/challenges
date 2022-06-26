@@ -15,6 +15,7 @@ function getDivisorsCnt(n) {
   return div;
 }
 
+
 //Another solution
 function getDivisorsCnt(n){
     let output = 0; 
