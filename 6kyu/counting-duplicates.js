@@ -17,6 +17,7 @@ function duplicateCount(text){
   return [...new Set(text.split(''))].filter((c,i) => text.lastIndexOf(c) > text.indexOf(c)).length;
 }
 
+
 //Another Solution
 function duplicateCount(text){
   text = text.toLowerCase()
