@@ -17,6 +17,7 @@ var appendArrays = combineArrays;
 //Solution2
 function appendArrays (arr1, arr2) { return arr1.concat(arr2) }
 
+
 //Solution3
 function appendArrays (arr1, arr2) {
   return [].concat( arr1, arr2 )
