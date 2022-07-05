@@ -1,6 +1,6 @@
 <h1 align='center'> Codewars | <a href='https://www.codewars.com/users/juliafm'>Visit here!</a></h1>
 
-<img src='https://github.com/juliafmorgado/codewars/blob/main/codewars.JPG' width='100%'>
+<img src='https://github.com/juliafmorgado/codewars/blob/main/codewars.png' width='100%'>
 
 
 <br>
