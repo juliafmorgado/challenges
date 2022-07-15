@@ -5,5 +5,6 @@
 // Task
 // Fix the bug so we can all go home early.
 
+
 //Solution
 var replaceDots = s=>s.split('.').join('-')
