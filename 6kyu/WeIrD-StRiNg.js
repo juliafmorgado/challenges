@@ -5,3 +5,8 @@
 // Examples:
 // toWeirdCase( "String" );//=> returns "StRiNg"
 // toWeirdCase( "Weird string case" );//=> returns "WeIrD StRiNg CaSe"
+
+//Solution
+function toWeirdCase(string){
+  return string.split(" ").map(w=>w.split("").map((e,i)=>i%2==0?e.toUpperCase():e.toLowerCase()).join("")).join(" ");
+}
