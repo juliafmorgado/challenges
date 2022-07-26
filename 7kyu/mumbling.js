@@ -14,6 +14,7 @@ function accum(s) {
     return s.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
   }
 
+
 //Another solution
 function accum(s) {
     return s.split('').map((x,index) => x.toUpperCase()+Array(index+1).join(x.toLowerCase())).join('-');
