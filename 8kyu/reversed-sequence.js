@@ -2,6 +2,7 @@
 
 // Example : n=5 --> [5,4,3,2,1]
 
+
 //Solution
 const reverseSeq = n => {
 let arr = [];
