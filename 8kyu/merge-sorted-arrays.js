@@ -5,6 +5,7 @@
 // Note: arr1 and arr2 may be sorted in different orders. Also arr1 and arr2 may have same integers. Remove duplicated in the returned result.
 
 
+
 //My Solution
 function mergeArrays(arr1, arr2) {
     //concatenate both arrays
