@@ -6,6 +6,7 @@
 
 // Return the total figure the individual will receive as a string prefixed with "£"
 
+
 //Solution
 function bonusTime(salary, bonus) {
   return bonus ? `£${10 * salary}` : `£${salary}`;
